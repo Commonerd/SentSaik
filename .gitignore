@@ -9,10 +9,6 @@ __pycache__/
 .venv/
 .env
 
-# Data
-data/raw/*
-!data/raw/.gitkeep
-
 # Model caches
 huggingface/
 .cache/
@@ -20,7 +16,3 @@ huggingface/
 # Jupyter / experiments
 *.ipynb_checkpoints
 
-# Results (can be regenerated)
-results/*.png
-results/*.csv
-!results/.gitkeep
