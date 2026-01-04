@@ -1,0 +1,35 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+transformers
+torch
+tqdm
+konlpy
+beautifulsoup4
+requests
+wordcloud
+python-dotenv
+newspaper3k
+protobuf
+sentencepiece
+
+# --- Advanced / Optional ---
+# Topic modeling & embeddings
+bertopic
+sentence-transformers
+umap-learn
+hdbscan
+# Optional for some tokenizer conversions (e.g., tiktoken-based models)
+# tiktoken
+
+# Fine-tuning / training utilities
+datasets
+evaluate
+
+# Network analysis
+networkx
+
+# Optional Korean sentence segmentation
+# kss

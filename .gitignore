@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Envs
+.venv/
+.env
+
+# Data
+data/raw/*
+!data/raw/.gitkeep
+
+# Model caches
+huggingface/
+.cache/
+
+# Jupyter / experiments
+*.ipynb_checkpoints
+
+# Results (can be regenerated)
+results/*.png
+results/*.csv
+!results/.gitkeep

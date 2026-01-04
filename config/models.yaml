@@ -1,0 +1,7 @@
+# Default model configuration
+# 사용자는 필요 시 값을 변경 가능
+
+default_transformer: skt/kobert-base-v1 # 한국어 BERT 모델
+zero_shot_model: joeddav/xlm-roberta-large-xnli # 다국어 제로샷 분류 모델 https://arxiv.org/pdf/1911.02116
+zero_shot_labels: ["긍정", "부정", "동정", "비판", "애도"] # 제로샷 분류 레이블
+paragraph_method: lexicon  # 문단 감정 기본 (성능/속도 고려)
