@@ -6,11 +6,11 @@
 
 ### Sentiment Transition Network
 
-![Sentiment Transition Network](results/plots_network_context_sentence/sentence_transition_network.png)
+![Sentiment Transition Network](results/plots_network_context_sentence/sentence_transition_network_human_reviewed.png)
 
 ### Sentiment Transition Matrix
 
-![Sentiment Transition Matrix](results/plots_network_context_sentence/sentence_transition_matrix.png)
+![Sentiment Transition Matrix](results/plots_network_context_sentence/sentence_transition_matrix_human_reviewed.png)
 
 # How to Run
 
@@ -19,27 +19,27 @@
 
 ## 1. Preparation: Virtual Environment & Install Packages
 
-- python -m venv .venv
+- python3 -m venv .venv
 - source .venv/bin/activate (On Windows: .venv\Scripts\activate)
 - pip install -r requirements.txt
 
 ## 2. Preprocessing
 
-- python -m src.preprocess.clean_text
+- python3 -m src.preprocess.clean_text
 
 ## 3. Analysis 1: Generate Sentence-level Sentiment Labeling CSV
 
-- python -m src.analysis.contextual_sentence_sentiment --method zero-shot --zero-shot-labels "긍정,부정,동정"
+- python3 -m src.analysis.contextual_sentence_sentiment --method zero-shot --zero-shot-labels "긍정,부정,동정"
 - output: results/contextual_sentence_flow.csv
 
 ## 4. Analysis 2: Generate Sentence-level Sentiment Transition CSV
 
-- python -m src.analysis.contextual_sentence_transition_network
+- python3 -m src.analysis.contextual_sentence_transition_network
 - output: results/network_context_sentence/sentiment_transition_edges.csv, sentiment_transition_nodes.csv
 
 ## 5. Visualization
 
-- python -c "from src.visualize.sentence_transition_network import plot_contextual_sentence_transition_network; plot_contextual_sentence_transition_network()"
+- python3 -c "from src.visualize.sentence_transition_network import plot_contextual_sentence_transition_network; plot_contextual_sentence_transition_network()"
 - Output: results/plots_network_context_sentence/sentence_transition_network.png
 
 ## Project Structure
